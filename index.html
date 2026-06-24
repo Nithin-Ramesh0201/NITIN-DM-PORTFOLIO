@@ -1,1123 +1,1154 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cardia — Dr. Arjun Kapoor, Cardiologist, Ludhiana</title>
-<meta name="description" content="Dr. Arjun Kapoor provides comprehensive heart care in Ludhiana, Punjab.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-/* ============================================
-   Cardia — Heart Specialist Site, Ludhiana
-   ============================================ */
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardia Heart Centre — Dr. Ananya Sharma, Cardiologist, Ludhiana</title>
+  <meta name="description" content="Dr. Ananya Sharma provides comprehensive heart care in Ludhiana, Punjab.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wgh
+  t@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+  /* ============================================
+     Cardia Heart Centre — Heart Specialist Site, Ludhiana
+     ============================================ */
 
-:root {
-  --ink: #1A0A2E;
-  --ink-soft: #3D2457;
-  --paper: #FDFAF6;
-  --paper-dim: #F5EFE4;
-  --sand: #EDE5D4;
-  --sage: #7B5EA7;
-  --sage-soft: #C4ADDC;
-  --coral: #D4522A;
-  --coral-soft: #EDBBAA;
-  --gold: #B8860B;
-  --line: rgba(26, 10, 46, 0.12);
+  :root {
+    --ink: #0F2A3D;
+    --ink-soft: #2B4A5E;
+    --paper: #FAFAF8;
+    --paper-dim: #F3F1EA;
+    --sand: #E8E2D4;
+    --sage: #5B8A82;
+    --sage-soft: #A9C2BC;
+    --coral: #C9594A;
+    --coral-soft: #E8B6AE;
+    --gold: #B8860B;
+    --line: rgba(15, 42, 61, 0.12);
 
-  --font-display: "Fraunces", Georgia, serif;
-  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+    --font-display: "Fraunces", Georgia, serif;
+    --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-mono: "IBM Plex Mono", "Courier New", monospace;
 
-  --step--1: clamp(0.83rem, 0.8rem + 0.15vw, 0.95rem);
-  --step-0: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
-  --step-1: clamp(1.2rem, 1.1rem + 0.4vw, 1.5rem);
-  --step-2: clamp(1.5rem, 1.3rem + 0.8vw, 2.1rem);
-  --step-3: clamp(2rem, 1.6rem + 1.6vw, 3.2rem);
-  --step-4: clamp(2.6rem, 2rem + 2.6vw, 4.6rem);
+    --step--1: clamp(0.83rem, 0.8rem + 0.15vw, 0.95rem);
+    --step-0: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
+    --step-1: clamp(1.2rem, 1.1rem + 0.4vw, 1.5rem);
+    --step-2: clamp(1.5rem, 1.3rem + 0.8vw, 2.1rem);
+    --step-3: clamp(2rem, 1.6rem + 1.6vw, 3.2rem);
+    --step-4: clamp(2.6rem, 2rem + 2.6vw, 4.6rem);
 
-  --container: 1180px;
-  --radius: 2px;
-  --ease: cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+    --container: 1180px;
+    --radius: 2px;
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
   }
-}
 
-body {
-  margin: 0;
-  background: var(--paper);
-  color: var(--ink);
-  font-family: var(--font-body);
-  font-size: var(--step-0);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-
-h1, h2, h3, h4 {
-  font-family: var(--font-display);
-  font-weight: 600;
-  line-height: 1.12;
-  margin: 0 0 0.5em;
-  letter-spacing: -0.01em;
-  color: var(--ink);
-}
-
-h1 { font-size: var(--step-4); font-weight: 500; }
-h2 { font-size: var(--step-3); font-weight: 500; }
-h3 { font-size: var(--step-2); font-weight: 600; }
-h4 { font-size: var(--step-1); font-weight: 600; }
-
-p { margin: 0 0 1em; color: var(--ink-soft); }
-a { color: inherit; text-decoration: none; }
-img { max-width: 100%; display: block; }
-
-.container {
-  max-width: var(--container);
-  margin: 0 auto;
-  padding: 0 32px;
-}
-
-.eyebrow {
-  font-family: var(--font-mono);
-  font-size: var(--step--1);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--sage);
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 18px;
-}
-
-.eyebrow::before {
-  content: "";
-  width: 22px;
-  height: 1px;
-  background: var(--coral);
-}
-
-/* ============================================
-   Header / Nav
-   ============================================ */
-
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: rgba(253, 250, 246, 0.92);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--line);
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 22px 32px;
-  max-width: var(--container);
-  margin: 0 auto;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: var(--ink);
-}
-
-.brand-mark { width: 26px; height: 18px; }
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 38px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links a {
-  font-size: var(--step--1);
-  letter-spacing: 0.02em;
-  color: var(--ink-soft);
-  position: relative;
-  padding: 4px 0;
-  transition: color 0.25s var(--ease);
-}
-
-.nav-links a:hover,
-.nav-links a:focus-visible { color: var(--ink); }
-
-.nav-links a.active { color: var(--ink); }
-.nav-links a.active::after {
-  content: "";
-  position: absolute;
-  left: 0; right: 0; bottom: -3px;
-  height: 1.5px;
-  background: var(--coral);
-}
-
-.nav-cta {
-  font-family: var(--font-mono);
-  font-size: var(--step--1);
-  border: 1px solid var(--ink);
-  padding: 10px 20px;
-  border-radius: var(--radius);
-  transition: background 0.25s var(--ease), color 0.25s var(--ease);
-  white-space: nowrap;
-}
-
-.nav-cta:hover, .nav-cta:focus-visible {
-  background: var(--ink);
-  color: var(--paper);
-}
-
-.nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 8px;
-}
-.nav-toggle span {
-  display: block;
-  width: 24px;
-  height: 1.5px;
-  background: var(--ink);
-  margin: 5px 0;
-  transition: transform 0.25s var(--ease), opacity 0.25s var(--ease);
-}
-
-/* ============================================
-   Hindi tagline banner
-   ============================================ */
-
-.hindi-banner {
-  background: var(--coral);
-  color: #fff;
-  text-align: center;
-  font-size: 0.82rem;
-  letter-spacing: 0.06em;
-  padding: 8px 16px;
-  font-family: var(--font-mono);
-}
-
-/* ============================================
-   Buttons
-   ============================================ */
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-family: var(--font-mono);
-  font-size: var(--step--1);
-  letter-spacing: 0.02em;
-  padding: 14px 26px;
-  border-radius: var(--radius);
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: all 0.25s var(--ease);
-}
-
-.btn-primary {
-  background: var(--ink);
-  color: var(--paper);
-  border-color: var(--ink);
-}
-.btn-primary:hover, .btn-primary:focus-visible {
-  background: var(--coral);
-  border-color: var(--coral);
-}
-
-.btn-ghost {
-  background: transparent;
-  color: var(--ink);
-  border-color: var(--ink);
-}
-.btn-ghost:hover, .btn-ghost:focus-visible {
-  background: var(--ink);
-  color: var(--paper);
-}
-
-.btn-arrow { transition: transform 0.25s var(--ease); }
-.btn:hover .btn-arrow { transform: translateX(3px); }
-
-/* ============================================
-   Pulse line
-   ============================================ */
-
-.pulse-divider {
-  width: 100%;
-  height: 48px;
-  display: block;
-  margin: 0;
-}
-
-.pulse-path {
-  fill: none;
-  stroke: var(--coral);
-  stroke-width: 1.5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.pulse-draw {
-  stroke-dasharray: 600;
-  stroke-dashoffset: 600;
-  animation: draw 2.2s var(--ease) forwards;
-}
-
-@keyframes draw {
-  to { stroke-dashoffset: 0; }
-}
-
-/* ============================================
-   Hero
-   ============================================ */
-
-.hero {
-  padding: 90px 0 70px;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 60px;
-  align-items: center;
-}
-
-.hero h1 { margin-bottom: 22px; }
-.hero h1 em {
-  font-style: italic;
-  color: var(--sage);
-}
-
-.hero-sub {
-  font-size: var(--step-1);
-  max-width: 46ch;
-  margin-bottom: 34px;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
-}
-
-.hero-stats {
-  display: flex;
-  gap: 40px;
-  padding-top: 30px;
-  border-top: 1px solid var(--line);
-}
-
-.stat-num {
-  font-family: var(--font-display);
-  font-size: var(--step-2);
-  color: var(--ink);
-  display: block;
-}
-
-.stat-label {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--sage);
-  letter-spacing: 0.04em;
-}
-
-.hero-visual {
-  position: relative;
-  aspect-ratio: 4/5;
-  border-radius: var(--radius);
-  overflow: hidden;
-  background: var(--ink);
-}
-
-.hero-visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.92;
-}
-
-.hero-visual-tag {
-  position: absolute;
-  bottom: 22px;
-  left: 22px;
-  right: 22px;
-  background: rgba(253,250,246,0.95);
-  padding: 16px 18px;
-  border-radius: var(--radius);
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--ink);
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.hero-visual-tag b { color: var(--coral); }
-
-/* ============================================
-   Section basics
-   ============================================ */
-
-section { padding: 100px 0; }
-.section-tight { padding: 70px 0; }
-.section-sand { background: var(--sand); }
-.section-ink { background: var(--ink); color: var(--paper); }
-.section-ink p { color: var(--sage-soft); }
-.section-ink h2, .section-ink h3 { color: var(--paper); }
-
-.section-head {
-  max-width: 640px;
-  margin-bottom: 56px;
-}
-
-.section-head.center {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-/* ============================================
-   Cards / grids
-   ============================================ */
-
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-}
-
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
-}
-
-.card {
-  background: var(--paper);
-  border: 1px solid var(--line);
-  padding: 38px 32px;
-  border-radius: var(--radius);
-  transition: border-color 0.3s var(--ease), transform 0.3s var(--ease);
-}
-
-.card:hover {
-  border-color: var(--sage);
-  transform: translateY(-3px);
-}
-
-.card-icon {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 22px;
-  color: var(--coral);
-}
-
-.card-num {
-  font-family: var(--font-mono);
-  color: var(--sage);
-  font-size: var(--step--1);
-  margin-bottom: 14px;
-  display: block;
-}
-
-.service-card {
-  background: var(--paper);
-  border: 1px solid var(--line);
-  padding: 36px;
-  border-radius: var(--radius);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.service-card h3 { font-size: var(--step-1); margin-bottom: 14px; }
-
-.service-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0 0;
-  border-top: 1px solid var(--line);
-  padding-top: 20px;
-}
-
-.service-card li {
-  font-size: var(--step--1);
-  color: var(--ink-soft);
-  padding: 6px 0;
-  position: relative;
-  padding-left: 18px;
-}
-
-.service-card li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 14px;
-  width: 6px;
-  height: 1.5px;
-  background: var(--coral);
-}
-
-/* ============================================
-   Accreditation ribbon
-   ============================================ */
-
-.accreditation-strip {
-  display: flex;
-  gap: 28px;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 24px 0;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  margin-bottom: 60px;
-}
-
-.accreditation-strip span {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--sage);
-  letter-spacing: 0.04em;
-  padding: 6px 14px;
-  border: 1px solid var(--line);
-  border-radius: 1px;
-}
-
-/* ============================================
-   Quote / testimonial
-   ============================================ */
-
-.quote-block { max-width: 760px; }
-
-.quote-block blockquote {
-  font-family: var(--font-display);
-  font-size: var(--step-2);
-  font-weight: 400;
-  font-style: italic;
-  color: var(--ink);
-  margin: 0 0 24px;
-  line-height: 1.4;
-}
-
-.quote-attr {
-  font-family: var(--font-mono);
-  font-size: var(--step--1);
-  color: var(--sage);
-}
-
-.testimonial-card {
-  background: var(--paper);
-  border: 1px solid var(--line);
-  padding: 34px;
-  border-radius: var(--radius);
-}
-
-.testimonial-card p:first-of-type {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: var(--step-0);
-  color: var(--ink);
-}
-
-.testimonial-meta {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid var(--line);
-}
-
-.testimonial-avatar {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: var(--sage-soft);
-  flex-shrink: 0;
-}
-
-.testimonial-name {
-  font-size: var(--step--1);
-  font-weight: 600;
-  color: var(--ink);
-}
-
-.testimonial-role {
-  font-family: var(--font-mono);
-  font-size: 0.76rem;
-  color: var(--sage);
-}
-
-.stars {
-  color: var(--coral);
-  font-size: 0.85rem;
-  letter-spacing: 2px;
-  margin-bottom: 14px;
-}
-
-/* ============================================
-   Stats strip
-   ============================================ */
-
-.stats-strip {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  text-align: center;
-}
-
-.stats-strip .stat-num {
-  font-size: var(--step-3);
-  color: var(--coral);
-}
-
-/* ============================================
-   Process
-   ============================================ */
-
-.process-row {
-  display: grid;
-  grid-template-columns: 90px 1fr;
-  gap: 24px;
-  padding: 32px 0;
-  border-top: 1px solid var(--line);
-}
-.process-row:last-child { border-bottom: 1px solid var(--line); }
-.process-num {
-  font-family: var(--font-mono);
-  font-size: var(--step-1);
-  color: var(--coral);
-}
-.process-content h4 { margin-bottom: 8px; }
-
-/* ============================================
-   Contact / Form
-   ============================================ */
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 70px;
-}
-
-.info-row {
-  display: flex;
-  gap: 18px;
-  padding: 22px 0;
-  border-top: 1px solid var(--line);
-}
-.info-row:last-child { border-bottom: 1px solid var(--line); }
-.info-label {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--sage);
-  width: 110px;
-  flex-shrink: 0;
-  padding-top: 2px;
-}
-.info-value { color: var(--ink); font-weight: 500; }
-.info-value span { display: block; color: var(--ink-soft); font-weight: 400; font-size: var(--step--1); }
-
-.form-field { margin-bottom: 22px; }
-.form-field label {
-  display: block;
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
-  color: var(--sage);
-  margin-bottom: 8px;
-}
-
-.form-field input,
-.form-field select,
-.form-field textarea {
-  width: 100%;
-  padding: 13px 14px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--paper);
-  font-family: var(--font-body);
-  font-size: var(--step--1);
-  color: var(--ink);
-  transition: border-color 0.25s var(--ease);
-}
-
-.form-field input:focus,
-.form-field select:focus,
-.form-field textarea:focus {
-  outline: none;
-  border-color: var(--sage);
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-}
-
-/* ============================================
-   CTA band
-   ============================================ */
-
-.cta-band {
-  background: var(--ink);
-  color: var(--paper);
-  padding: 80px 0;
-  text-align: center;
-}
-.cta-band h2 { color: var(--paper); max-width: 18ch; margin-left: auto; margin-right: auto; }
-.cta-band p { color: var(--sage-soft); max-width: 50ch; margin-left: auto; margin-right: auto; margin-bottom: 36px; }
-.cta-band .btn-primary { background: var(--coral); border-color: var(--coral); }
-.cta-band .btn-primary:hover { background: var(--paper); color: var(--ink); border-color: var(--paper); }
-
-/* ============================================
-   Insurance / empanelment section
-   ============================================ */
-
-.insurance-list {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.insurance-tag {
-  font-family: var(--font-mono);
-  font-size: 0.76rem;
-  padding: 8px 14px;
-  border: 1px solid var(--line);
-  border-radius: 1px;
-  color: var(--ink-soft);
-  background: var(--paper);
-}
-
-/* ============================================
-   Footer
-   ============================================ */
-
-.site-footer {
-  background: var(--ink);
-  color: var(--sage-soft);
-  padding: 64px 0 28px;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1.4fr repeat(3, 1fr);
-  gap: 40px;
-  padding-bottom: 50px;
-  border-bottom: 1px solid rgba(253,250,246,0.12);
-}
-
-.footer-brand {
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  color: var(--paper);
-  margin-bottom: 14px;
-}
-
-.footer-col h5 {
-  font-family: var(--font-mono);
-  font-size: 0.76rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--paper);
-  margin-bottom: 18px;
-}
-
-.footer-col a {
-  display: block;
-  font-size: var(--step--1);
-  color: var(--sage-soft);
-  margin-bottom: 12px;
-  transition: color 0.2s var(--ease);
-}
-.footer-col a:hover { color: var(--paper); }
-
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 26px;
-  font-size: 0.8rem;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.footer-emergency {
-  font-family: var(--font-mono);
-  color: var(--coral-soft);
-}
-
-/* ============================================
-   Responsive
-   ============================================ */
-
-@media (max-width: 980px) {
-  .hero-grid { grid-template-columns: 1fr; }
-  .hero-visual { aspect-ratio: 16/10; order: -1; }
-  .grid-3 { grid-template-columns: 1fr 1fr; }
-  .contact-grid { grid-template-columns: 1fr; gap: 50px; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
-  .stats-strip { grid-template-columns: 1fr 1fr; gap: 30px; }
-}
-
-@media (max-width: 720px) {
-  .nav-links {
-    position: fixed;
-    top: 73px; left: 0; right: 0;
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    margin: 0;
     background: var(--paper);
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 30px 32px;
-    gap: 22px;
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: var(--step-0);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 1.12;
+    margin: 0 0 0.5em;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+
+  h1 { font-size: var(--step-4); font-weight: 500; }
+  h2 { font-size: var(--step-3); font-weight: 500; }
+  h3 { font-size: var(--step-2); font-weight: 600; }
+  h4 { font-size: var(--step-1); font-weight: 600; }
+
+  p { margin: 0 0 1em; color: var(--ink-soft); }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+
+  .container {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--sage);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .eyebrow::before {
+    content: "";
+    width: 22px;
+    height: 1px;
+    background: var(--coral);
+  }
+
+  /* ============================================
+     Header / Nav
+     ============================================ */
+
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(250, 250, 248, 0.92);
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--line);
-    transform: translateY(-130%);
-    opacity: 0;
-    transition: transform 0.35s var(--ease), opacity 0.35s var(--ease);
   }
-  .nav-links.open { transform: translateY(0); opacity: 1; }
-  .nav-toggle { display: block; }
-  .nav-cta { display: none; }
 
-  .grid-3, .grid-2 { grid-template-columns: 1fr; }
-  .form-row { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr; gap: 30px; }
-  .stats-strip { grid-template-columns: 1fr 1fr; }
-  .hero-stats { gap: 26px; flex-wrap: wrap; }
-  section { padding: 64px 0; }
-  .process-row { grid-template-columns: 50px 1fr; }
-}
-</style>
-</head>
-<body>
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 32px;
+    max-width: var(--container);
+    margin: 0 auto;
+  }
 
-<!-- Top info banner -->
-<div class="hindi-banner">हृदय की देखभाल — Comprehensive Heart Care in Ludhiana, Punjab &nbsp;|&nbsp; OPD: Mon–Sat, 9 AM – 6 PM</div>
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
 
-<header class="site-header">
-  <nav class="nav">
-    <a href="index.html" class="brand">
-      <svg class="brand-mark" viewBox="0 0 26 18" fill="none"><path d="M0 9H7L9.5 2L14 16L16.5 9H26" stroke="#D4522A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      Hridaya
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="testimonials.html">Testimonials</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <a href="contact.html" class="nav-cta">Book Appointment</a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </nav>
-</header>
+  .brand-mark { width: 26px; height: 18px; }
 
-<main>
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="eyebrow">Cardiology &amp; Preventive Heart Care · Ludhiana</span>
-        <h1>Dil ki baat,<br>expert ke<br><em>saath.</em></h1>
-        <p class="hero-sub">Dr. Arjun Kapoor has spent twenty-two years helping patients across Ludhiana and Punjab understand, protect, and strengthen their hearts — through honest conversation and precise, evidence-based care. Hindi and Punjabi consultations available.</p>
-        <div class="hero-actions">
-          <a href="contact.html" class="btn btn-primary">Book Appointment <span class="btn-arrow">→</span></a>
-          <a href="services.html" class="btn btn-ghost">View Services</a>
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links a {
+    font-size: var(--step--1);
+    letter-spacing: 0.02em;
+    color: var(--ink-soft);
+    position: relative;
+    padding: 4px 0;
+    transition: color 0.25s var(--ease);
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus-visible { color: var(--ink); }
+
+  .nav-links a.active { color: var(--ink); }
+  .nav-links a.active::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: -3px;
+    height: 1.5px;
+    background: var(--coral);
+  }
+
+  .nav-cta {
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    border: 1px solid var(--ink);
+    padding: 10px 20px;
+    border-radius: var(--radius);
+    transition: background 0.25s var(--ease), color 0.25s var(--ease);
+    white-space: nowrap;
+  }
+
+  .nav-cta:hover, .nav-cta:focus-visible {
+    background: var(--ink);
+    color: var(--paper);
+  }
+
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+  .nav-toggle span {
+    display: block;
+    width: 24px;
+    height: 1.5px;
+    background: var(--ink);
+    margin: 5px 0;
+    transition: transform 0.25s var(--ease), opacity 0.25s var(--ease);
+  }
+
+  /* ============================================
+     Hindi tagline banner
+     ============================================ */
+
+  .hindi-banner {
+    background: var(--coral);
+    color: #fff;
+    text-align: center;
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+    padding: 8px 16px;
+    font-family: var(--font-mono);
+  }
+
+  /* ============================================
+     Buttons
+     ============================================ */
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    letter-spacing: 0.02em;
+    padding: 14px 26px;
+    border-radius: var(--radius);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.25s var(--ease);
+  }
+
+  .btn-primary {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+  .btn-primary:hover, .btn-primary:focus-visible {
+    background: var(--coral);
+    border-color: var(--coral);
+  }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--ink);
+    border-color: var(--ink);
+  }
+  .btn-ghost:hover, .btn-ghost:focus-visible {
+    background: var(--ink);
+    color: var(--paper);
+  }
+
+  .btn-arrow { transition: transform 0.25s var(--ease); }
+  .btn:hover .btn-arrow { transform: translateX(3px); }
+
+  /* ============================================
+     Pulse line
+     ============================================ */
+
+  .pulse-divider {
+    width: 100%;
+    height: 48px;
+    display: block;
+    margin: 0;
+  }
+
+  .pulse-path {
+    fill: none;
+    stroke: var(--coral);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .pulse-draw {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: draw 2.2s var(--ease) forwards;
+  }
+
+  @keyframes draw {
+    to { stroke-dashoffset: 0; }
+  }
+
+  /* ============================================
+     Hero
+     ============================================ */
+
+  .hero {
+    padding: 90px 0 70px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .hero h1 { margin-bottom: 22px; }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--sage);
+  }
+
+  .hero-sub {
+    font-size: var(--step-1);
+    max-width: 46ch;
+    margin-bottom: 34px;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--line);
+  }
+
+  .stat-num {
+    font-family: var(--font-display);
+    font-size: var(--step-2);
+    color: var(--ink);
+    display: block;
+  }
+
+  .stat-label {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--sage);
+    letter-spacing: 0.04em;
+  }
+
+  .hero-visual {
+    position: relative;
+    aspect-ratio: 4/5;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--ink);
+  }
+
+  .hero-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.92;
+  }
+
+  .hero-visual-tag {
+    position: absolute;
+    bottom: 22px;
+    left: 22px;
+    right: 22px;
+    background: rgba(250,250,248,0.95);
+    padding: 16px 18px;
+    border-radius: var(--radius);
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--ink);
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .hero-visual-tag b { color: var(--coral); }
+
+  /* ============================================
+     Section basics
+     ============================================ */
+
+  section { padding: 100px 0; }
+  .section-tight { padding: 70px 0; }
+  .section-sand { background: var(--sand); }
+  .section-ink { background: var(--ink); color: var(--paper); }
+  .section-ink p { color: var(--sage-soft); }
+  .section-ink h2, .section-ink h3 { color: var(--paper); }
+
+  .section-head {
+    max-width: 640px;
+    margin-bottom: 56px;
+  }
+
+  .section-head.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* ============================================
+     Cards / grids
+     ============================================ */
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 38px 32px;
+    border-radius: var(--radius);
+    transition: border-color 0.3s var(--ease), transform 0.3s var(--ease);
+  }
+
+  .card:hover {
+    border-color: var(--sage);
+    transform: translateY(-3px);
+  }
+
+  .card-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 22px;
+    color: var(--coral);
+  }
+
+  .card-num {
+    font-family: var(--font-mono);
+    color: var(--sage);
+    font-size: var(--step--1);
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  .service-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 36px;
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .service-card h3 { font-size: var(--step-1); margin-bottom: 14px; }
+
+  .service-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    border-top: 1px solid var(--line);
+    padding-top: 20px;
+  }
+
+  .service-card li {
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    padding: 6px 0;
+    position: relative;
+    padding-left: 18px;
+  }
+
+  .service-card li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 6px;
+    height: 1.5px;
+    background: var(--coral);
+  }
+
+  /* ============================================
+     Accreditation ribbon
+     ============================================ */
+
+  .accreditation-strip {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 24px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 60px;
+  }
+
+  .accreditation-strip span {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--sage);
+    letter-spacing: 0.04em;
+    padding: 6px 14px;
+    border: 1px solid var(--line);
+    border-radius: 1px;
+  }
+
+  /* ============================================
+     Quote / testimonial
+     ============================================ */
+
+  .quote-block { max-width: 760px; }
+
+  .quote-block blockquote {
+    font-family: var(--font-display);
+    font-size: var(--step-2);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--ink);
+    margin: 0 0 24px;
+    line-height: 1.4;
+  }
+
+  .quote-attr {
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    color: var(--sage);
+  }
+
+  .testimonial-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 34px;
+    border-radius: var(--radius);
+  }
+
+  .testimonial-card p:first-of-type {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: var(--step-0);
+    color: var(--ink);
+  }
+
+  .testimonial-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+
+  .testimonial-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--sage-soft);
+    flex-shrink: 0;
+  }
+
+  .testimonial-name {
+    font-size: var(--step--1);
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .testimonial-role {
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    color: var(--sage);
+  }
+
+  .stars {
+    color: var(--coral);
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+  }
+
+  /* ============================================
+     Stats strip
+     ============================================ */
+
+  .stats-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+  }
+
+  .stats-strip .stat-num {
+    font-size: var(--step-3);
+    color: var(--coral);
+  }
+
+  /* ============================================
+     Process
+     ============================================ */
+
+  .process-row {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 24px;
+    padding: 32px 0;
+    border-top: 1px solid var(--line);
+  }
+  .process-row:last-child { border-bottom: 1px solid var(--line); }
+  .process-num {
+    font-family: var(--font-mono);
+    font-size: var(--step-1);
+    color: var(--coral);
+  }
+  .process-content h4 { margin-bottom: 8px; }
+
+  /* ============================================
+     Contact / Form
+     ============================================ */
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 70px;
+  }
+
+  .info-row {
+    display: flex;
+    gap: 18px;
+    padding: 22px 0;
+    border-top: 1px solid var(--line);
+  }
+  .info-row:last-child { border-bottom: 1px solid var(--line); }
+  .info-label {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--sage);
+    width: 110px;
+    flex-shrink: 0;
+    padding-top: 2px;
+  }
+  .info-value { color: var(--ink); font-weight: 500; }
+  .info-value span { display: block; color: var(--ink-soft); font-weight: 400; font-size: var(--step--1); }
+
+  .form-field { margin-bottom: 22px; }
+  .form-field label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    color: var(--sage);
+    margin-bottom: 8px;
+  }
+
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    width: 100%;
+    padding: 13 same 14px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--paper);
+    font-family: var(--font-body);
+    font-size: var(--step--1);
+    color: var(--ink);
+    transition: border-color 0.25s var(--ease);
+  }
+
+  .form-field input:focus,
+  .form-field select:focus,
+  .form-field textarea:focus {
+    outline: none;
+    border-color: var(--sage);
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  /* ============================================
+     CTA band
+     ============================================ */
+
+  .cta-band {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 80px 0;
+    text-align: center;
+  }
+  .cta-band h2 { color: var(--paper); max-width: 18ch; margin-left: auto; margin-right: auto; }
+  .cta-band p { color: var(--sage-soft); max-width: 50ch; margin-left: auto; margin-right: auto; margin-bottom: 36px; }
+  .cta-band .btn-primary { background: var(--coral); border-color: var(--coral); }
+  .cta-band .btn-primary:hover { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+
+  /* ============================================
+     Insurance / empanelment section
+     ============================================ */
+
+  .insurance-list {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .insurance-tag {
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    padding: 8px 14px;
+    border: 1px solid var(--line);
+    border-radius: 1px;
+    color: var(--ink-soft);
+    background: var(--paper);
+  }
+
+  /* ============================================
+     Footer
+     ============================================ */
+
+  .site-footer {
+    background: var(--ink);
+    color: var(--sage-soft);
+    padding: 64px 0 28px;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr repeat(3, 1fr);
+    gap: 40px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(250,250,248,0.12);
+  }
+
+  .footer-brand {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--paper);
+    margin-bottom: 14px;
+  }
+
+  .footer-col h5 {
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--paper);
+    margin-bottom: 18px;
+  }
+
+  .footer-col a {
+    display: block;
+    font-size: var(--step--1);
+    color: var(--sage-soft);
+    margin-bottom: 12px;
+    transition: color 0.2s var(--ease);
+  }
+  .footer-col a:hover { color: var(--paper); }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px;
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .footer-emergency {
+    font-family: var(--font-mono);
+    color: var(--coral-soft);
+  }
+
+  /* ============================================
+     Responsive
+     ============================================ */
+
+  @media (max-width: 980px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-visual { aspect-ratio: 16/10; order: -1; }
+    .grid-3 { grid-template-columns: 1fr 1fr; }
+    .contact-grid { grid-template-columns: 1fr; gap: 50px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .stats-strip { grid-template-columns: 1fr 1fr; gap: 30px; }
+  }
+
+  @media (max-width: 720px) {
+    .nav-links {
+      position: fixed;
+      top: 73px; left: 0; right: 0;
+      background: var(--paper);
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 30px 32px;
+      gap: 22px;
+      border-bottom: 1px solid var(--line);
+      transform: translateY(-130%);
+      opacity: 0;
+      transition: transform 0.35s var(--ease), opacity 0.35s var(--ease);
+    }
+    .nav-links.open { transform: translateY(0); opacity: 1; }
+    .nav-toggle { display: block; }
+    .nav-cta { display: none; }
+
+    .grid-3, .grid-2 { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+    .stats-strip { grid-template-columns: 1fr 1fr; }
+    .hero-stats { gap: 26px; flex-wrap: wrap; }
+    section { padding: 64px 0; }
+    .process-row { grid-template-columns: 50px 1fr; }
+  }
+  </style>
+  </head>
+  <body>
+
+  <!-- Top info banner -->
+  <div class="hindi-banner">हृदय की देखभाल — Comprehensive Heart Care in Ludhiana, Punjab &nbsp;|&nbsp; OPD: Mon–Sat, 9 A–
+   6 PM</div>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="brand">
+        <svg class="brand-mark" viewBox="0 0 26 18" fill="none"><path d="M0 9H7L9.5 2L14 16L16.5 9H26" stroke="#C9594A"
+  stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Cardia Heart Centre
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="testimonials.html">Testimonials</ same-link></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Book Appointment</a>
+      <button class="nav-toggle" aria-label="Toggle menu"
+  aria-expanded="false"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Cardiology &amp; Preventive Heart Care · Ludhiana</span>
+          <h1>Dil ki baat,<br>expert ke<br><em style="color: var(--sage);">saath.</em></h1>
+          <p class="hero-sub">Dr. Ananya Sharma has spent eighteen years helping patients across Ludhiana and Punjab
+  understand, protect, and strengthen their hearts — through honest conversation and precise, evidence-based care. Hindi
+   and Punjabi consultations available.</p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary">Book Appointment <span class="btn-arrow">→</</span></a>
+            <a href="services.html" class="btn btn-ghost">View Services</a>
+          </div>
+          <div class="hero-stats">
+            <div><span class="stat-num">18</span><span class="stat-label">Years in Practice</span></div>
+            <div><span class="stat-num">6,000+</span><span class="stat-label">Patients Treated</span></div>
+            <div><span class="stat-num">4.9/5</span><span class="stat-label">Patient Rating</span></div>
+          </div>
         </div>
-        <div class="hero-stats">
-          <div><span class="stat-num">22</span><span class="stat-label">Years in Practice</span></div>
-          <div><span class="stat-num">8,400+</span><span class="stat-label">Patients Treated</span></div>
-          <div><span class="stat-num">4.9/5</span><span class="stat-label">Patient Rating</span></div>
+        <div class="hero-visual">
+          <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=900&auto=format&fit=crop"
+  alt="Dr. Ananya Sharma consulting with a patient">
+          <div class="hero-visual-tag"><span>Dr. Ananya Sharma</span><span><b style="color: var(--coral);">MD, FACC</b>
+  · CMC Ludhiana & PGIMER</span></div>
         </div>
       </div>
-      <div class="hero-visual">
-        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=900&auto=format&fit=crop" alt="Dr. Arjun Kapoor consulting with a patient">
-        <div class="hero-visual-tag"><span>Dr. Arjun Kapoor</span><span><b>MD, DM (Cardiology)</b> · AIIMS Delhi</span></div>
+      <div class="container">
+        <svg class="pulse-divider" viewBox="0 0 1180 48" preserveAspectRatio="none">
+          <path class="pulse-path pulse-draw" d="M0 24 H440 L460 24 L475 6 L495 42 L515 24 L535 24 L550 14 L565 24
+  H1180"/>
+        </svg>
       </div>
-    </div>
-    <div class="container">
-      <svg class="pulse-divider" viewBox="0 0 1180 48" preserveAspectRatio="none">
-        <path class="pulse-path pulse-draw" d="M0 24 H440 L460 24 L475 6 L495 42 L515 24 L535 24 L550 14 L565 24 H1180"/>
-      </svg>
-    </div>
-  </section>
+    </section>
 
-  <!-- Stats strip -->
-  <section class="section-tight section-sand">
-    <div class="container">
-      <div class="stats-strip">
-        <div><span class="stat-num">22+</span><span class="stat-label">Years Experience</span></div>
-        <div><span class="stat-num">8,400+</span><span class="stat-label">Hearts Cared For</span></div>
-        <div><span class="stat-num">15</span><span class="stat-label">Procedures Offered</span></div>
-        <div><span class="stat-num">99%</span><span class="stat-label">Would Recommend</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Hridaya -->
-  <section>
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Why Hridaya</span>
-        <h2>Heart care that listens before it treats.</h2>
-        <p>Every consultation begins with time — to understand your history, your lifestyle, and your concerns — before a single test is ordered. Consultations in Hindi, Punjabi, and English.</p>
-      </div>
-
-      <!-- Accreditation ribbon -->
-      <div class="accreditation-strip">
-        <span>NABH Accredited</span>
-        <span>Empanelled: CGHS</span>
-        <span>Empanelled: ESIC</span>
-        <span>Empanelled: Ayushman Bharat–PMJAY</span>
-        <span>AIIMS Delhi Alumni</span>
-        <span>PGI Chandigarh Trained</span>
-      </div>
-
-      <div class="grid-3">
-        <div class="card">
-          <svg class="card-icon" viewBox="0 0 40 40" fill="none"><path d="M20 33S6 24.5 6 14.8C6 9.9 9.9 6 14.6 6c2.8 0 5.3 1.4 6.9 3.5C23.1 7.4 25.6 6 28.4 6 33.1 6 37 9.9 37 14.8 37 24.5 23 33 20 33z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
-          <h4>Patient-First Approach</h4>
-          <p>Unhurried appointments with plain-language explanations in Hindi or Punjabi — a plan you actually understand before you leave the room.</p>
-        </div>
-        <div class="card">
-          <svg class="card-icon" viewBox="0 0 40 40" fill="none"><path d="M5 22h7l3-9 5 18 3-13 2 4h10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <h4>Precision Diagnostics</h4>
-          <p>In-house echocardiography, stress testing, Holter monitoring, and CT angiography — results reviewed personally, same-day reports available.</p>
-        </div>
-        <div class="card">
-          <svg class="card-icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="1.4"/><path d="M20 12v8l6 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-          <h4>Continuity of Care</h4>
-          <p>The same physician follows your case from first OPD visit through recovery — no hand-offs, no repeating your story to a junior resident.</p>
+    <!-- Stats strip -->
+    <section class="section-tight section-sand">
+      <div class="container">
+        <div class="stats-strip">
+          <div><span class="stat-num">18+</span><span class="stat-label">Years Experience</span></div>
+          <div><span class="stat-num">6,000+</span><span class="stat-label">Hearts Cared For</span></div>
+          <div><span class="stat-num">15</span><span class="stat-label">Procedures Offered</span></div>
+          <div><span class="stat-num">99%</span><span class="stat-label">Would Recommend</span></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Services -->
-  <section class="section-sand">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Areas of Care</span>
-        <h2>Care across every stage of heart health.</h2>
-      </div>
-      <div class="grid-3">
-        <div class="service-card">
-          <span class="card-num">01</span>
-          <h3>Preventive Cardiology</h3>
-          <p>Risk assessment, cholesterol and blood sugar management, and lifestyle planning tailored to Punjabi dietary habits and family history.</p>
+    <!-- Why Cardia -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why Cardia Heart Centre</span>
+          <h2 style="color: var(--ink);">Heart care that listens before it treats.</h2>
+          <p>Every consultation begins with time — to understand your history, your lifestyle, and your concerns —
+  before a single test is ordered. Consultations in Hindi, Punjabi, and English.</p>
         </div>
-        <div class="service-card">
-          <span class="card-num">02</span>
-          <h3>Diagnostic Testing</h3>
-          <p>ECG, echocardiogram, TMT stress test, 24-hr Holter monitoring, and lipid profiling — same-week scheduling, reports in Hindi if needed.</p>
+
+        <!-- Accreditation ribbon -->
+        <div class="accreditation-strip">
+          <span style="color: var(--sage);">NABH Accredited</span>
+          <span style="color: var(--sage);">Empanelled: CGHS</span>
+          <span style="color: var(--sage);">Empanelled: ESIC</span>
+          <span style="color: var(--sage);">Empanelled: Ayushman Bharat–PMJAY</span>
+          <span style="color: var(--sage);">CMC Ludhiana Alumni</span>
+          <span style="color: var(--sage);">PGIMER Chandigarh Trained</span>
         </div>
-        <div class="service-card">
-          <span class="card-num">03</span>
-          <h3>Interventional Care</h3>
-          <p>Angiography, angioplasty, and stenting with post-procedure cardiac rehab, coordinated with DMC &amp; Hospital and Dayanand Medical College, Ludhiana.</p>
+
+        <div class="grid-3">
+          <div class="card">
+            <svg class="card-icon" viewBox="0 0 40 40" fill="none"><path d="M20 33S6 24.5 6 14.8C6 9.9 9.9 6 14.6 6c2.8
+  0 5.3 1.4 6.9 3.5C23.1 7.4 25.6 6 28.4 6 33.1 6 37 9.9 37 14.8 37 24.5 23 33 20 33z" stroke="currentColor"
+  stroke-width="1.4" stroke-linejoin="round"/></svg>
+            <h4 style="color: var(--ink);">Patient-First Approach</h4>
+            <p>Unhurried appointments with plain-language explanations in Hindi or Punjabi — a plan you actually
+  understand before you leave the room.</p>
+          </div>
+          <div class="card">
+            <svg class="card-icon" viewBox="0 0 40 40" fill="none"><path d="M5 22h7l3-9 5 18 3-13 2 4h10"
+  stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h4 style="color: var(--ink);">Precision Diagnostics</h4>
+            <p>In-house echocardiography, stress testing, Holter monitoring, and CT angiography — results reviewed
+  personally, same-day reports available.</p>
+          </div>
+          <div class="card">
+            <svg class="card-icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="14" stroke="currentColor"
+  stroke-width="1.4"/><path d="M20 12v8l6 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            <h4 style="color: var(--ink);">Continuity of Care</h4>
+            <p>The same physician follows your case from first OPD visit through recovery — no hand-offs, no repeating
+  your story to a junior resident.</p>
+          </div>
         </div>
       </div>
-      <div style="margin-top:44px;"><a href="services.html" class="btn btn-ghost">See All Services <span class="btn-arrow">→</span></a></div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Quote -->
-  <section>
-    <div class="container">
-      <div class="quote-block">
-        <span class="eyebrow">Philosophy</span>
-        <blockquote>"दिल की सेहत सिर्फ बीमारी का न होना नहीं है — यह सही समय पर सही ध्यान देना है। A healthy heart is not the absence of disease — it is the presence of attention."</blockquote>
-        <span class="quote-attr">— Dr. Arjun Kapoor, MD, DM (Cardiology)</span>
+    <!-- Services -->
+    <section class="section-sand">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Areas of Care</span>
+          <h2 style="color: var(--ink);">Care across every stage of heart health.</h2>
+        </div>
+        <div class="grid-3">
+          <div class="service-card">
+            <span class="card-num">01</span>
+            <h3 style="color: var(--ink);">Preventive Cardiology</h3>
+            <p>Risk assessment, cholesterol and blood sugar management, and lifestyle planning tailored to Punjabi
+  dietary habits and family history.</p>
+          </div>
+          <div class="service-card">
+            <span class="card-num">02</span>
+            <h3 style="color: var(--ink);">Diagnostic Testing</h3>
+            <p>ECG, echocardiogram, TMT stress test, 24-hr Holter monitoring, and lipid profiling — same-week
+  scheduling, reports in Hindi if needed.</p>
+          </div>
+          <div class="service-card">
+            <span class="card-num">03</span>
+            <h3 style="color: var(--ink);">Interventional Care</h3>
+            <p>Angiography, angioplasty, and stenting with post-procedure cardiac rehab, coordinated with top cardiac
+  centers in Ludhiana.</p>
+          </div>
+        </div>
+        <div style="margin-top:44px;"><a href="services.html" class="btn btn-ghost">See All Services <span
+  class="btn-arrow">→</</span></a></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Insurance -->
-  <section class="section-sand">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Cashless &amp; Empanelled</span>
-        <h2>Affordable care — no compromise.</h2>
-        <p>We accept major government schemes and private insurance. No hidden charges; consultation fees from ₹500.</p>
+    <!-- Quote -->
+    <section>
+      <div class="container">
+        <div class="quote-block">
+          <span class="eyebrow">Philosophy</span>
+          <blockquote>"दिल की सेहत सिर्फ बीमारी का न होना नहीं है — यह सही समय पर सही ध्यान देना है। A healthy heart is not theabsence of
+  disease — it is the presence of attention."</blockquote>
+          <span class="quote-attr">— Dr. Ananya Sharma, MD, FACC</span>
+        </div>
       </div>
-      <div class="insurance-list">
-        <span class="insurance-tag">Ayushman Bharat – PMJAY</span>
-        <span class="insurance-tag">CGHS</span>
-        <span class="insurance-tag">ESIC</span>
-        <span class="insurance-tag">Star Health Insurance</span>
-        <span class="insurance-tag">HDFC Ergo</span>
-        <span class="insurance-tag">New India Assurance</span>
-        <span class="insurance-tag">United India Insurance</span>
-        <span class="insurance-tag">Niva Bupa</span>
-        <span class="insurance-tag">Care Health Insurance</span>
-        <span class="insurance-tag">Max Bupa</span>
-        <span class="insurance-tag">Punjab Government Health Scheme</span>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Testimonials -->
-  <section>
-    <div class="container">
-      <div class="section-head"><span class="eyebrow">Patient Stories</span><h2>Trusted by the people of Punjab.</h2></div>
-      <div class="grid-3">
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>"Dr. Kapoor ji ne mera arrhythmia pakda jo pehle kisi ne nahi pakda tha. Bahut dhairya se samjhaya, kabhi bhi jaldi nahi ki."</p>
-          <div class="testimonial-meta">
-            <div class="testimonial-avatar"></div>
-            <div>
-              <div class="testimonial-name">Gurpreet S.</div>
-              <div class="testimonial-role">Patient since 2020 · Ludhiana</div>
+    <!-- Insurance -->
+    <section class="section-sand">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Cashless &amp; Empanelled</span>
+          <h2 style="color: var(--ink);">Affordable care — no compromise.</h2>
+          <p>We accept major government schemes and private insurance. No hidden charges; consultation fees starting
+  from ₹500.</p>
+        </div>
+        <div class="insurance-list">
+          <span class="insurance-tag">Ayushman Bharat – PMJAY</span>
+          <span class="insurance-tag">CGHS</span>
+          <span class="insurance-tag">ESIC</span>
+          <span class="insurance-tag">Star Health Insurance</span>
+          <span class="insurance-tag">HDFC Ergo</span>
+          <span class="insurance-tag">New India Assurance</span>
+          <span class="insurance-tag">United India Insurance</span>
+          <span class="insurance-tag">Niva Bupa</span>
+          <span class="insurance-tag">Care Health Insurance</span>
+          <span class="insurance-tag">Max Bupa</span>
+          <span class="insurance-tag">Punjab Government Health Scheme</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section>
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Patient Stories</span><h2 style="color: var(--ink);">Trusted by
+  the people of Punjab.</h2></div>
+        <div class="grid-3">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Dr. Sharma ji ne mera arrhythmia pakda jo pehle kisi ne nahi pakda tha. Bahut dhairya se samjhaya, kabhi
+   bhi jaldi nahi ki."</p>
+            <div class="testimonial-meta">
+              <div class="testimonial-avatar"></div>
+              <div>
+                <div class="testimonial-name">Gurpreet S.</div>
+                <div class="testimonial-role">Patient since 2020 · Ludhiana</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"My angioplasty was explained in plain Punjabi. I walked in frightened and left knowing exactly what had
+  been done and why. Outstanding."</p>
+            <div class="testimonial-meta">
+              <div class="testimonial-avatar"></div>
+              <div>
+                <div class="testimonial-name">Rajinder K.</div>
+                <div class="testimonial-role">Patient since 2022 · Jalandhar</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Two years post-stent and feeling stronger than I have in fifteen years. The follow-up calls and diet
+  guidance made all the difference."</p>
+            <div class="testimonial-meta">
+              <div class="testimonial-avatar"></div>
+              <div>
+                <div class="testimonial-name">Harjinder M.</div>
+                <div class="testimonial-role">Patient since 2018 · Patiala</div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>"My angioplasty was explained in plain Punjabi. I walked in frightened and left knowing exactly what had been done and why. Outstanding."</p>
-          <div class="testimonial-meta">
-            <div class="testimonial-avatar"></div>
-            <div>
-              <div class="testimonial-name">Rajinder K.</div>
-              <div class="testimonial-role">Patient since 2022 · Jalandhar</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>"Two years post-stent and feeling stronger than I have in fifteen years. The follow-up calls and diet guidance made all the difference."</p>
-          <div class="testimonial-meta">
-            <div class="testimonial-avatar"></div>
-            <div>
-              <div class="testimonial-name">Harjinder M.</div>
-              <div class="testimonial-role">Patient since 2018 · Patiala</div>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA -->
-  <section class="cta-band">
+    <!-- CTA -->
+    <section class="cta-band">
+      <div class="container">
+        <h2 style="color: var(--paper);">Aapka dil deserves a closer look.</h2>
+        <p style="color: var(--sage-soft);">Book an OPD appointment and take the first clear step toward understanding
+  your heart health — in your own language, at your own pace.</p>
+        <a href="contact.html" class="btn btn-primary">Book Appointment <span class="btn-arrow">→</</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div class="container">
-      <h2>Aapka dil deserves a closer look.</h2>
-      <p>Book an OPD appointment and take the first clear step toward understanding your heart health — in your own language, at your own pace.</p>
-      <a href="contact.html" class="btn btn-primary">Book Appointment <span class="btn-arrow">→</span></a>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand" style="color: var(--paper);">Cardia Heart Centre</div>
+          <p style="max-width:34ch; color: var(--sage-soft);">Comprehensive cardiology care in Ludhiana, Punjab, led by
+  Dr. Ananya Sharma, MD, FACC.</p>
+          <p style="max-width:34ch; font-size: 0.82rem; color: var(--sage-soft);">OPD Hours: Mon–Sat, 9 AM – 6
+  PM<br>Emergency: 24 × 7</p>
+        </div>
+        <div class="footer-col">
+          <h5 style="color: var(--paper);">Site</h5>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="testimonials.html">Testimonials</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5 style="color: var(--paper);">Services</h5>
+          <a href="services.html">Preventive Cardiology</a>
+          <a href="services.html">Diagnostic Testing</a>
+          <a href="services.html">Angioplasty &amp; Stenting</a>
+          <a href="services.html">Cardiac Rehabilitation</a>
+          <a href="services.html">Holter Monitoring</a>
+        </div>
+        <div class="footer-col">
+          <h5 style="color: var(--paper);">Contact</h5>
+          <a href="tel:+911612450000">+91 161 245 0000</a>
+          <a href="mailto:hello@cardiaindia.com">hello@cardiaindia.com</a>
+          <a href="contact.html">Plot 42, Model Town,<br>Ludhiana – 141 002, Punjab</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span style="color: var(--sage-soft);">© 2026 Cardia Heart Centre. All rights reserved.</span>
+        <span class="footer-emergency" style="color: var(--coral-soft);">Emergency? Call 112 or go to the nearest
+  hospital immediately.</span>
+      </div>
     </div>
-  </section>
-</main>
+  </footer>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand">Hridaya</div>
-        <p style="max-width:34ch;">Comprehensive cardiology care in Ludhiana, Punjab, led by Dr. Arjun Kapoor, MD, DM (Cardiology).</p>
-        <p style="max-width:34ch; font-size: 0.82rem;">OPD Hours: Mon–Sat, 9 AM – 6 PM<br>Emergency: 24 × 7</p>
-      </div>
-      <div class="footer-col">
-        <h5>Site</h5>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="testimonials.html">Testimonials</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="footer-col">
-        <h5>Services</h5>
-        <a href="services.html">Preventive Cardiology</a>
-        <a href="services.html">Diagnostic Testing</a>
-        <a href="services.html">Angioplasty &amp; Stenting</a>
-        <a href="services.html">Cardiac Rehabilitation</a>
-        <a href="services.html">Holter Monitoring</a>
-      </div>
-      <div class="footer-col">
-        <h5>Contact</h5>
-        <a href="tel:+911612345678">+91 161 234 5678</a>
-        <a href="mailto:care@hridayaludhiana.in">care@hridayaludhiana.in</a>
-        <a href="contact.html">14, Ferozepur Road,<br>Model Town, Ludhiana – 141 002, Punjab</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Hridaya Cardiology, Ludhiana. All rights reserved.</span>
-      <span class="footer-emergency">Emergency? Call 112 or go to the nearest hospital immediately.</span>
-    </div>
-  </div>
-</footer>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.querySelector('.nav-links');
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  var toggle = document.querySelector('.nav-toggle');
-  var links = document.querySelector('.nav-links');
-
-  if (toggle && links) {
-    toggle.addEventListener('click', function () {
-      var isOpen = links.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
-    links.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () {
-        links.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
+    if (toggle && links) {
+      toggle.addEventListener('click', function () {
+        var isOpen = links.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       });
-    });
-  }
-
-  var pulses = document.querySelectorAll('.pulse-draw');
-  if ('IntersectionObserver' in window && pulses.length) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.style.animation = 'none';
-          void entry.target.offsetWidth;
-          entry.target.style.animation = '';
-          io.unobserve(entry.target);
-        }
+      links.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          links.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
       });
-    }, { threshold: 0.4 });
-    pulses.forEach(function (p) { io.observe(p); });
-  }
+    }
 
-  var form = document.querySelector('.contact-form');
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var btn = form.querySelector('button[type="submit"]');
-      var original = btn.textContent;
-      btn.textContent = 'Appointment request sent ✓';
-      btn.disabled = true;
-      form.reset();
-      setTimeout(function () {
-        btn.textContent = original;
-        btn.disabled = false;
-      }, 3000);
-    });
-  }
-});
-</script>
-</body>
-</html>
+    var pulses = document.querySelectorAll('.pulse-draw');
+    if ('IntersectionObserver' in window && pulses.length) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.style.animation = 'none';
+            void entry.target.offsetWidth;
+            entry.target.style.animation = '';
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.4 });
+      pulses.forEach(function (p) { io.observe(p); });
+    }
+
+    var form = document.querySelector('.contact-form');
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var btn = form.querySelector('button[type="submit"]');
+        var original = btn.textContent;
+        btn.textContent = 'Appointment request sent ✓';
+        btn.disabled = true;
+        form.reset();
+        setTimeout(function () {
+          btn.textContent = original;
+          btn.disabled = false;
+        }, 3000);
+      });
+    }
+  });
+  </script>
+  </body>
+  </html>
